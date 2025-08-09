@@ -5,204 +5,155 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>NeptuneX</title>
   <style>
-    :root {
-      --bg-color: #000000;
-      --accent-color: #98FF98; /* Mint Green */
-      --accent-hover: #b0ffb0; /* Lighter Mint for hover */
-      --text-light: #f0f0f0;
-      --text-muted: #aaaaaa;
-      --section-border: #222;
-    }
-
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background-color: var(--bg-color);
-      color: var(--text-light);
+      background-color: #000;
+      color: #fff;
     }
 
     header {
+      background-color: #111;
+      padding: 1rem 2rem;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 1rem 2rem;
-      background-color: #111;
-      border-bottom: 1px solid var(--section-border);
-    }
-
-    .logo {
-      font-size: 1.8rem;
-      font-weight: bold;
-      color: var(--accent-color);
-      letter-spacing: 1px;
     }
 
     nav a {
-      margin-left: 1.5rem;
+      color: #fff;
       text-decoration: none;
-      color: var(--text-muted);
-      font-weight: 500;
-      transition: color 0.3s;
+      margin-left: 1.5rem;
+      font-weight: bold;
     }
 
     nav a:hover {
-      color: var(--accent-color);
+      color: #ccc;
     }
 
     .hero {
       text-align: center;
-      padding: 5rem 2rem;
+      padding: 4rem 2rem;
+      background-color: #0a0a0a;
     }
 
     .hero h1 {
-      font-size: 3.5rem;
+      font-size: 3rem;
       margin-bottom: 1rem;
-      color: var(--accent-color);
     }
 
     .hero p {
       font-size: 1.2rem;
-      color: var(--text-muted);
-      max-width: 600px;
-      margin: 0 auto;
+      margin-bottom: 2rem;
+      color: #ccc;
     }
 
-    .cta {
-      display: inline-block;
-      margin-top: 2rem;
+    .cta-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .cta-buttons a {
       padding: 0.75rem 1.5rem;
-      background-color: var(--accent-color);
-      color: var(--bg-color);
-      text-decoration: none;
+      border: none;
       border-radius: 5px;
       font-weight: bold;
-      transition: background 0.3s, transform 0.2s;
-    }
-
-    .cta:hover {
-      background-color: var(--accent-hover);
-      transform: scale(1.05);
-    }
-
-    section.division {
-      padding: 3rem 2rem;
-      border-top: 1px solid var(--section-border);
-    }
-
-    section.division h2 {
-      font-size: 2rem;
-      margin-bottom: 1rem;
-      color: var(--accent-color);
-    }
-
-    section.division p {
-      font-size: 1rem;
-      color: var(--text-muted);
-      max-width: 700px;
-    }
-
-    #projects {
-      padding: 3rem 2rem;
-      border-top: 1px solid var(--section-border);
-    }
-
-    #projects h2 {
-      font-size: 2rem;
-      margin-bottom: 1rem;
-      color: var(--accent-color);
-    }
-
-    #projects ul {
-      list-style: none;
-      padding: 0;
-    }
-
-    #projects li {
-      margin-bottom: 0.5rem;
-      font-size: 1rem;
-      color: var(--text-muted);
-    }
-
-    #contact {
-      padding: 3rem 2rem;
-      border-top: 1px solid var(--section-border);
-      text-align: center;
-    }
-
-    #contact h2 {
-      font-size: 2rem;
-      margin-bottom: 1rem;
-      color: var(--accent-color);
-    }
-
-    #contact a {
-      color: var(--accent-color);
       text-decoration: none;
-      font-weight: bold;
+      color: #000;
+    }
+
+    .ai-btn {
+      background: linear-gradient(to right, #98FF98, #66FFCC);
+    }
+
+    .security-btn {
+      background: linear-gradient(to right, #00FFFF, #66CCFF);
+    }
+
+    .ux-btn {
+      background: linear-gradient(to right, #DC143C, #FF6F61);
+    }
+
+    section {
+      padding: 3rem 2rem;
+      margin: 2rem;
+      border-top: 8px solid;
+      border-radius: 8px;
+    }
+
+    .ai {
+      border-image: linear-gradient(to right, #98FF98, #66FFCC) 1;
+    }
+
+    .security {
+      border-image: linear-gradient(to right, #00FFFF, #66CCFF) 1;
+    }
+
+    .ux {
+      border-image: linear-gradient(to right, #DC143C, #FF6F61) 1;
+    }
+
+    section h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    section p {
+      font-size: 1rem;
+      color: #ccc;
     }
 
     footer {
       text-align: center;
       padding: 1rem;
       background-color: #111;
-      border-top: 1px solid var(--section-border);
       font-size: 0.9rem;
-      color: var(--text-muted);
+      color: #666;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <div class="logo">NeptuneX</div>
+    <div class="logo"><strong>NeptuneX</strong></div>
     <nav>
       <a href="#ai">AI</a>
       <a href="#security">Security</a>
       <a href="#ux">UX</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
     </nav>
   </header>
 
-  <section class="hero">
-    <h1>NeptuneX</h1>
-    <p>Engineering the future of AI, cybersecurity, and user experience.</p>
-    <a href="#projects" class="cta">Explore Builds</a>
-  </section>
+  <main>
+    <section class="hero">
+      <h1>Welcome to NeptuneX</h1>
+      <p>Innovating the future through AI, Security, and User Experience.</p>
+      <div class="cta-buttons">
+        <a href="#ai" class="ai-btn">Explore AI</a>
+        <a href="#security" class="security-btn">Secure with Us</a>
+        <a href="#ux" class="ux-btn">Design Better</a>
+      </div>
+    </section>
 
-  <section id="ai" class="division">
-    <h2>NeptuneX AI</h2>
-    <p>Intelligent automation, plugin architecture, and LLM-powered tools designed to think beyond.</p>
-  </section>
+    <section id="ai" class="ai">
+      <h2>Artificial Intelligence</h2>
+      <p>Harness cutting-edge machine learning to automate, predict, and evolve your digital ecosystem.</p>
+    </section>
 
-  <section id="security" class="division">
-    <h2>NeptuneX Security</h2>
-    <p>Anti-crack logic, HWID systems, and secure licensing infrastructure built to fortify the future.</p>
-  </section>
+    <section id="security" class="security">
+      <h2>Security</h2>
+      <p>Protect your data and infrastructure with advanced encryption, monitoring, and threat mitigation.</p>
+    </section>
 
-  <section id="ux" class="division">
-    <h2>NeptuneX UX</h2>
-    <p>Branded loaders, splash screens, and hot-reloadable interfaces crafted with purpose.</p>
-  </section>
-
-  <section id="projects">
-    <h2>NX Dev Projects</h2>
-    <ul>
-      <li>Custom Discord Bots with dynamic modules</li>
-      <li>Secure Licensing Systems with HWID binding</li>
-      <li>REST Clients & Injectors with branded loaders</li>
-      <li>Admin Dashboards with audit logs and buyer flows</li>
-    </ul>
-  </section>
-
-  <section id="contact">
-    <h2>Get in Touch</h2>
-    <p>Want to collaborate or license a tool? Reach out.</p>
-    <a href="mailto:your@email.com">Email Us</a>
-  </section>
+    <section id="ux" class="ux">
+      <h2>User Experience</h2>
+      <p>Craft intuitive, elegant interfaces that delight users and drive engagement across platforms.</p>
+    </section>
+  </main>
 
   <footer>
-    <p>&copy; 2025 NeptuneX. All rights reserved.</p>
+    &copy; 2025 NeptuneX. All rights reserved.
   </footer>
 
 </body>
