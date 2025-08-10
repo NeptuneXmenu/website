@@ -1,39 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NeptuneX UX - VUE</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NeptuneX UX — VUE</title>
   <style>
     :root {
       --ux-color: #DC143C;
-      --bg-color: #f9f9f9;
-      --text-color: #333;
-      --accent-light: #ffccd5;
+      --bg-dark: #0f0f0f;
+      --card-dark: #1a1a1a;
+      --text-light: #f0f0f0;
+      --text-muted: #aaaaaa;
     }
 
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background-color: var(--bg-color);
-      color: var(--text-color);
+      background-color: var(--bg-dark);
+      color: var(--text-light);
     }
 
     header {
       background-color: var(--ux-color);
-      color: white;
       padding: 2rem;
       text-align: center;
     }
 
     header h1 {
       margin: 0;
-      font-size: 2.5rem;
+      font-size: 2.8rem;
+      color: #fff;
     }
 
     header p {
-      font-size: 1.2rem;
       margin-top: 0.5rem;
+      font-size: 1.2rem;
+      color: #ffeef0;
     }
 
     section {
@@ -43,11 +45,12 @@
     }
 
     .card {
-      background-color: white;
-      border-left: 6px solid var(--ux-color);
+      background-color: var(--card-dark);
+      border-left: 4px solid var(--ux-color);
       padding: 1.5rem;
       margin-bottom: 1.5rem;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.6);
+      border-radius: 6px;
     }
 
     .card h2 {
@@ -55,12 +58,20 @@
       color: var(--ux-color);
     }
 
+    .card ul {
+      padding-left: 1.2rem;
+    }
+
+    .card ul li {
+      margin-bottom: 0.5rem;
+    }
+
     footer {
-      background-color: var(--accent-light);
       text-align: center;
       padding: 1rem;
       font-size: 0.9rem;
-      color: var(--text-color);
+      color: var(--text-muted);
+      border-top: 1px solid #222;
     }
   </style>
 </head>
@@ -68,13 +79,13 @@
 
   <header>
     <h1>VUE Division</h1>
-    <p>Visual User Experience — Crafting clarity through design</p>
+    <p>Visual User Experience — Designing clarity through aesthetics</p>
   </header>
 
   <section>
     <div class="card">
       <h2>🎨 Design Philosophy</h2>
-      <p>VUE focuses on creating intuitive, visually compelling interfaces that align with NeptuneX’s futuristic ethos. Every pixel matters.</p>
+      <p>VUE is the visual heartbeat of NeptuneX. We craft interfaces that are intuitive, immersive, and unmistakably futuristic.</p>
     </div>
 
     <div class="card">
@@ -89,7 +100,7 @@
 
     <div class="card">
       <h2>🚀 Tools & Stack</h2>
-      <p>Figma, Adobe XD, Framer, Lottie, CSS-in-JS frameworks, and custom NeptuneX design tokens.</p>
+      <p>Figma, Adobe XD, Framer, Lottie, CSS-in-JS, and NeptuneX’s proprietary design tokens.</p>
     </div>
   </section>
 
